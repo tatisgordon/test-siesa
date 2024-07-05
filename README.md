@@ -2,8 +2,8 @@
 
   - Installation
 
-      download the code and open file : index.html
+      Descargue el codigo y abra el archivo : index.html
   
-  - alternative
+  - Alternativamente
     
-      click on the live site https://test-siesa.pages.dev/
+     click en el enlace para ir al sitio  https://test-siesa.pages.dev/
