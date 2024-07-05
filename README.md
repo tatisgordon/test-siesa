@@ -2,7 +2,7 @@
 
   - Installation
 
-      download the code and open file : calculator.html
+      download the code and open file : index.html
   
   - alternative
     
