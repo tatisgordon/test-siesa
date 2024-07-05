@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Calculadora</title>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="calculator">
+			<h1>Calculadora</h1>
+			<p><i>(No se admiten decimales [,] ni irracionales [e])</i></p>
+			<div class="input-item">
+				<label for="value1">Ingrese el valor 1:</label>
+				<input type="number" id="value1">
+			</div>
+			<div class="input-item">
+				<label for="value2">Ingrese el valor 2:</label>
+				<input type="number" id="value2">
+			</div>
+			<div class="input-item">
+				<label for="operator">Elija el operador:</label>
+				<select id="operator">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+
+				</select>
+			</div>
+
+			<div class="radio-group">
+				<p>Elija la forma de mostrar el resultado:</p>
+				<label class="radio-container">
+					<input type="radio" id="onPage" name="displayType" checked>
+					<span class="custom-radio"></span>
+					En la página
+				</label>
+				<label class="radio-container">
+					<input type="radio" id="alert" name="displayType">
+					<span class="custom-radio"></span>
+					En una alerta
+				</label>
+			</div>
+
+			<div class="calculate-button">
+				<button id="calculate">Calcular</button>
+			</div>
+
+			<div class="result-area">
+				<p id="result-item" class="result-item">¡Área para el resultado!</p>
+			</div>
+
+			<div class="history">
+				<div class="history-title">
+					<img width="25" height="35" src="assets/icon.png"></img>
+					<span>Historial...................................</span>
+				</div>
+
+				<div class="input-item search">
+					<label class="search-label" for="search"> Buscar</label>
+					<input class="search" name="search" type="text" id="search">
+				</div>
+				<ul id="historyList" class="historyList"></ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			alert('bienvenido a la practica');
+		});
+	</script>
+	<script type="text/javascript" src="./js/Calculator.js"></script>
+	<script type="text/javascript" src="./js/CalculatorController.js"></script>
+
+
+
+</body>
+
+</html>
